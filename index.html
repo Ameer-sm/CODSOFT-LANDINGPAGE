@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Web Developers</title>
+</head>
+
+<body>
+    <nav>
+        <div class="heading">Landing Page</div>
+        <span class="sideMenuButton" 
+            onclick="openNavbar()">
+            &#9776
+        </span>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Side navigation bar for 
+        responsive website -->
+    <div class="sideNavigationBar" 
+        id="sideNavigationBar">
+        <a href="#" class="closeButton" 
+            onclick="closeNavbar()">
+            &#x274C
+        </a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Sign Up</a>
+    </div>
+
+    <!-- Content -->
+    <div class="line" id="Home">
+        <div class="side1">
+            <h1>Web Developers</h1>
+            <button>
+                <a href=
+"https://en.wikipedia.org/wiki/Web_development">
+                    Explore More
+                </a>
+            </button>
+        </div>
+        <div class="side2">
+            <img src=
+"data:image/jpeg;base64,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"
+                width="500">
+        </div>
+    </div>
+
+    <section class="about" id="My Projects">
+        <div class="content">
+            <div class="title">
+                <span>Courses</span>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="topic">
+                        <a href="" target="_blank">
+                            HTML
+                        </a>
+                    </div>
+                    <p>
+                     HTML (Hypertext Markup Language) is a text-based approach to describing how content contained within an HTML file is structured. This markup tells a web browser how to display text, images and other forms of multimedia on a webpage.   
+                    </p>
+                </div>
+                <div class="box">
+
+                    <div class="topic">
+                        <a href="" target="_blank">
+                            CSS
+                        </a>
+                    </div>
+                    <p>
+                        CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <div class="topic">
+                        <a href="" target="_blank">
+                            Javascript
+                        </a>
+                    </div>
+                    <p>
+                        JavaScript (JS) is the most 
+                        popular lightweight, interpreted 
+                        compiled programming language.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="content">
+            <div class="title"><span>Sign Up</span></div>
+            <div class="contactMenu">
+                <div class="input1">
+                    <div class="label1">Your Name</div>
+                    <div class="input2">
+                        <input type="text" 
+                            placeholder="Enter your Name here">
+                    </div>
+                    <div class="label1">
+                        <label>Your Email</label>
+                    </div>
+                    <div class="input2">
+                        <input type="text" 
+                            placeholder="Enter your Email here">
+                    </div>
+                    <div class="label1">
+                        <label>Your Password</label>
+                    </div>
+                    <div class="input2">
+                        <input type="text" 
+                            placeholder="Enter your Password here">
+                    </div>
+                    <div class="button">
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+                <div class="input3">
+                    <div class="rightside1">
+                        <div class="title1">
+                            <span>
+                                Contact Us
+                            </span>
+                        </div>
+                        <div class="content1">
+                           B-12 , 13th Floor ,Tenth Sector Tower, k.k.Nagar,Tamil Nadu-600082
+                        </div>
+                        <div class="title1">
+                            <span>More Information</span>
+                        </div>
+                        <div class="content1">
+                        Greetings to all the new future webdevelopers who took the first step in their webdevelopment journey . this is a user friendly platform created to empowers you to learn and grow in web development. Whether you're starting from scratch or building on prior knowledge, our platform makes your learning journey smooth and enjoyable. Web development is about crafting the digital world, and our platform offers a well-paced learning path through HTML, CSS, JavaScript, and beyond. What sets us apart is our focus on interactivity and real-world practice. You'll build real projects, starting with simple pages and progressing to dynamic apps, through mini-projects, challenges, and guided tutorials. Our community-driven support system ensures you're never alone, and you can ask questions, collaborate on projects, and share achievements with fellow learners and experienced developers. Our platform encourages creativity and exploration, providing tools and templates to bring your ideas to life. With built-in code editors and preview windows, you can see your work come to life instantly. Our goal is to help you become a confident and capable developer, laying a solid foundation for your chosen path. You're encouraged to experiment, break things, and rebuild them – that's how real learning happens. With dedication and practice, you'll unlock endless possibilities and create something truly amazing. Welcome to our growing network of future web creators shaping the digital world.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer section -->
+    <footer>
+        <div class="footer">
+            <span>
+                Created By
+                <a href="#" 
+                    target="_blank">
+                   @ Web Developers
+                </a>
+            </span>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
